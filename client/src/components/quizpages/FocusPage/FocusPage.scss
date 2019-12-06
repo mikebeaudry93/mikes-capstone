@@ -1,0 +1,60 @@
+@import '../../../styles/styles.scss';
+
+.page {
+    background-image: url("../../../assets/14.jpg");
+    margin: 0px;
+
+    &__image {
+        width:60px;
+    }
+}
+
+.focus-title {
+    margin-top: 0px;
+    padding-top: 125px;
+    margin-left: 78px;
+    color: white;
+}
+
+.box {
+    display: flex;
+    flex-direction: column;
+    margin-top: 60px;
+}
+
+.button-quiz {
+    border-radius: 5px;
+    width: 80vw;
+    height: 80px;
+    background-color: white;
+    color: black;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.button-quiz:active {
+
+    border-color: #535353;
+    border: 4px solid #535353;
+    box-shadow: 0 5px rgba(0,0,0,0.24);
+    transform: translateY(4px);
+}
+
+.button-quiz:hover {
+
+    border-color: #535353;
+    border: 4px solid #535353;
+ }
+
+.button-next {
+    width: 50vw;
+    height: 50px;
+    margin-top: 60px;
+    background-color: #2F3538;
+    color: white;
+}
+
+.go-back {
+    font-size: 20px;
+}
