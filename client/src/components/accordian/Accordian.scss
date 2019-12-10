@@ -2,19 +2,34 @@
 .accordian__section  {
     display: flex;
     flex-direction: column;
+    // margin-left: 24px;
+    // margin-right: 24px;
+    // border-radius: 12px;
+}
+
+.accordian__sets {
+    font-size: 18px;
+    width: 50px;
+}
+
+.accordian__reps {
+    font-size: 18px;
+    width: 50px;
 }
 
 .accordian {
-    background-color: #eee;
+    background-color: white;
     color: #444;
     cursor: pointer;
-    padding: 18px;
+    padding: 15px;
     display: flex;
     justify-content: space-between;
     align-items: center;
     border: none;
     outline: none;
     transition: background-color 0.6 ease;
+    // border-top: 2px solid;
+    // border-radius: 12px;
 }
 
 .accordian:hover, 
@@ -24,8 +39,10 @@
 
 .accordian__title {
     font-weight: 600;
-    font-size: 22px;
-    color: #004156;
+    font-size: 21px;
+    color: black;
+    width: 170px;
+    text-align: start;
 }
 
 .accordian__icon {
@@ -43,13 +60,23 @@
     transition: max-height 0.6s ease;
 }
 
+.time {
+    margin-left: 19px;
+    font-size: 20px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
 .accordian__text {
     font-weight: 400;
-    font-size: 20px;
-    padding: 18px;
-    color: #004156;
+    line-height: 28px;
+    font-size: 18px;
+    padding: 18px;  
+    color: black;
 }
 
 .accordian__videolink {
     margin-left: 20px;
+    margin-bottom: 20px;
+    font-size: 18px;
 }

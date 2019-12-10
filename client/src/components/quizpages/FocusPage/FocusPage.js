@@ -26,7 +26,7 @@ export class FocusPage extends Component {
                         Strength
                     </button>
                     <Link to="/last-page">
-                        <button className={`button-next button-quiz`}>Next</button>
+                        <button className={`button-next button-quiz`} onClick={(e) => this.props.buttonClick4(e)}>Next</button>
                     </Link>
                     <Link to="/duration-page">
                         <button className="go-back">Go Back</button>

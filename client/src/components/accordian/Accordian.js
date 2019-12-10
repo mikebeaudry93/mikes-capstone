@@ -28,11 +28,14 @@ export default function Accordian(props) {
         <div className="accordian__section">
             <button className={`accordian ${setActive}`} onClick={toggleMenu}>
                 <p className="accordian__title">{props.itemContent.excercise}</p>
+                <p className="accordian__sets">{props.itemContent.sets}</p>
+                <p className="accordian__reps">{props.itemContent.reps}</p>
                 <Chevron className={`${setRotate}`} width={10} fill={"#777"}/>
             </button>
             <div  ref={content} style={{ maxHeight: `${setHeight}`}} className="accordian__content">
                 <div className="accordian__text"
                 dangerouslySetInnerHTML = {{ __html: props.itemContent.description }} />
+                <p className="time">{props.itemContent.time} minutes</p>
                  <Link to={`/video/${props.itemContent[props.prefferedInstructor]}`}>
                     <p className="accordian__videolink">Video Link</p>
                     {/* <Video itemContent={props.itemContent} prefferedIntructor={props.prefferedIntructor}/> */}

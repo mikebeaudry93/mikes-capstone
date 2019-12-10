@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom'
 
 // images
 import back from "../../assets/left.svg"
-import ResultLogo from "../../assets/resultlogo.svg"
+import ResultLogo from "../../assets/logo.svg"
 
 // components 
 import Accordian from "../accordian/Accordian"
@@ -18,7 +18,7 @@ export class Result extends Component {
     }
     
     render() {
-        console.log(this.props)
+
         return (
             <> 
             <div className="page">
@@ -30,11 +30,12 @@ export class Result extends Component {
                         <h1 className="result__title">Todays Workout</h1>
                         <img className="result__image" src={ResultLogo} alt="focus"></img>
                     </div>
-                    <div>
-                        <div></div>
-                        <div></div>
-                        <div></div>
+                    <div className="result__answers-box">
+                        <div className="result__duration result__box">{this.props.duration}</div>
+                        <div className="result__focus result__box">{this.props.focus}</div>
+                        <div className="result__gender result__box">{this.props.gender}</div>
                     </div>
+                    
                     {
                         // console.log(this.props.todaysWorkout)
                         this.props.todaysWorkout ?
@@ -42,6 +43,7 @@ export class Result extends Component {
                             return <Accordian itemContent={item} prefferedInstructor={this.props.prefferedInstructor}/>
                         }) : null 
                     }
+                    
                 </div>
                 </div> 
             </>

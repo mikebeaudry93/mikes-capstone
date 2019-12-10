@@ -5,8 +5,28 @@ import ReactPlayer from 'react-player'
 import { CSSTransition } from "react-transition-group"
 import { Link } from 'react-router-dom'
 
+// pages
+import Slideshow from '../SlideShow/SlideShow'
 import Quiz from '../quiz/Quiz'
 
+//images 
+
+import slide1 from '../../assets/carousel/image1.jpg'
+import slide2 from '../../assets/carousel/image2.jpg'
+import slide3 from '../../assets/carousel/image3.jpg'
+import slide4 from '../../assets/carousel/image4.jpg'
+import slide5 from '../../assets/carousel/image5.jpg'
+import image6 from '../../assets/carousel/image6.jpg'
+import image7 from '../../assets/carousel/image7.jpg'
+
+const s = {
+    container: "screenW screenH dGray col",
+    header: "flex1 fCenter fSize2",
+    main: "flex8 white",
+    footer: "flex1 fCenter"
+};  
+
+const slides = [slide1, slide2, slide3, slide4, slide5]
 
 
 export class Homepage extends Component {
@@ -28,27 +48,31 @@ export class Homepage extends Component {
     
 
         return (
-            <>  <div className="homepage">
-                    <div className="player-wrapper">
-                    {/* <ReactPlayer className="react-player" url="https://www.youtube.com/watch?v=KTZJdVfrIEk&t=210s" volume="0" playing="true" width="100%" height="100%"></ReactPlayer> */}
-                    </div>
-                    <div className="home__title-box">
-                        <h1 className="home__title">uFitness</h1>
-                        <Link to="/duration-page">
+            <>  <div className="homepage"> 
+                   <div className={s.container}>
+                        {/* <div className={s.header}>uFitness</div> */}
+                        <div className={s.main}>
+                            <div className={s.header}>uFitness</div>
+                            <Slideshow slides={slides} />
+                            <Link to="/duration-page">
                             <button className="button1 button" value="start" name="start" 
-                            // onClick={this.toggleQuiz}
+                            >Create Workout</button>
+                        </Link>
+                        </div>
+                        {/* <div className={s.footer}>
+                        <Link to="/duration-page">
+                           <button className="button1 button buttonstart" value="start" name="start" 
                             >Start Quiz</button>
                         </Link>
-                    </div>
-                    <CSSTransition
-                        in={this.state.isClicked}
-                        timeout={1000}
-                        classNames="fade"
-                    >
-                    <Quiz isClicked={this.state.isClicked} buttonClick1={this.props.buttonClick1} buttonClick2={this.props.buttonClick2} buttonClick3={this.props.buttonClick3}/>
-                    </CSSTransition>
-                    <div className="bottom-box">
-                    </div>
+                        </div> */}
+                    </div> 
+                    {/* <div className="home__title-box">
+                        <h1 className="home__title">uFitness</h1>
+                        // <Link to="/duration-page">
+                        //     <button className="button1 button" value="start" name="start" 
+                        //     >Start Quiz</button>
+                        // </Link>
+                    </div> */}
                 </div>
             </>
         )

@@ -12,16 +12,16 @@ export class DurationPage extends Component {
             <div className="page">
                 <h2 className="page__title">How Long is Today's Workout?</h2>
                 <div className="box">
-                        <button className={`button1 button-quiz`} value="10" onClick={(e) => this.props.buttonClick1(e)}>
-                        <img className="page__image" src={Clock} alt="10 minutes"></img>
+                        <button className={`button1 button-quiz`} value="15" onClick={(e) => this.props.buttonClick1(e)}>
+                        <img className="page__image" src={Clock} alt="15 minutes"></img>
                             15 Minutes
                         </button>
-                        <button className={`button2 button-quiz`} value="20" onClick={(e) => this.props.buttonClick1(e)}>
-                        <img className="page__image" src={Clock2} alt="10 minutes"></img>
+                        <button className={`button2 button-quiz`} value="30" onClick={(e) => this.props.buttonClick1(e)}>
+                        <img className="page__image" src={Clock2} alt="30 minutes"></img>
                             30 Minutes
                         </button>
-                        <button className={`button3 button-quiz`} value="30" onClick={(e) => this.props.buttonClick1(e)}>
-                        <img className="page__image" src={Clock3} alt="10 minutes"></img>
+                        <button className={`button3 button-quiz`} value="45" onClick={(e) => this.props.buttonClick1(e)}>
+                        <img className="page__image" src={Clock3} alt="45 minutes"></img>
                             45 Minutes
                         </button>
                         <Link to="/focus-page">

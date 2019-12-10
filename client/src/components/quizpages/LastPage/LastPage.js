@@ -12,15 +12,15 @@ export class LastPage extends Component {
             <div className="page">
             <h2 className="last-page-title">Who is Your Preffered Instructor?</h2>
              <div className="box">
-                <button className={`button1 button-quiz`} value="Male" onClick={(e) => this.props.buttonClick3(e)}>
+                <button className={`button1 button-quiz`} value="Male" name="Male" onClick={(e) => this.props.buttonClick3(e)}>
                 <img className="page__image" src={Male} alt="Male"></img>
                     Male
                 </button>
-                <button className={`button2 button-quiz`} value="Female" onClick={(e) => this.props.buttonClick3(e)}>
+                <button className={`button2 button-quiz`} value="Female" name="Female" onClick={(e) => this.props.buttonClick3(e)}>
                 <img className="page__image" src={Female} alt="Female"></img>
                     Female
                 </button>
-                <button className={`button3 button-quiz`} value="Female" onClick={(e) => this.props.buttonClick3(e)}>
+                <button className={`button3 button-quiz`} value="Female" name="Doesn't Matter" onClick={(e) => this.props.buttonClick3(e)}>
                 {/* <img className="page__image" src={Strength} alt="Don't"></img> */}
                     Doesn't Matter
                 </button>
