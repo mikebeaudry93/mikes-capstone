@@ -11,7 +11,7 @@
 .pretty {
     position: relative;
     left: 280px;
-    bottom: 40px;
+    top: 20px;
     font-size: 22px;
 }
 
@@ -29,7 +29,7 @@
     background-color: white;
     color: #444;
     cursor: pointer;
-    padding: 15px;
+    padding: 30px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -38,7 +38,24 @@
     transition: background-color 0.6 ease;
     // border-top: 2px solid;
     // border-radius: 12px;
+
+    &__videolink:hover {
+        text-decoration: underline;
+    }
 }
+
+.link {
+    text-decoration: none;
+    color: black;
+
+    &:hover {
+        text-decoration: underline;
+    }
+}
+
+// .link:hover {
+//     text-decoration: underline;
+// }
 
 .accordian:hover, 
 .active {
@@ -69,7 +86,7 @@
 }
 
 .time {
-    margin-left: 19px;
+    margin-left: 26px;
     font-size: 20px;
     margin-top: 10px;
     margin-bottom: 20px;
@@ -81,10 +98,11 @@
     font-size: 18px;
     padding: 18px;  
     color: black;
+    margin-left: 9px;
 }
 
 .accordian__videolink {
-    margin-left: 20px;
+    margin-left: 25px;
     margin-bottom: 20px;
     font-size: 18px;
 }
