@@ -11,12 +11,12 @@ import Quiz from '../quiz/Quiz'
 
 //images 
 
-import slide1 from '../../assets/carousel/image1.jpg'
-import slide2 from '../../assets/carousel/image2.jpg'
-import slide3 from '../../assets/carousel/image3.jpg'
+import slide1 from '../../assets/carousel/image8.jpg'
+import slide2 from '../../assets/carousel/image15.jpg'
+import slide3 from '../../assets/carousel/image10.jpg'
 import slide4 from '../../assets/carousel/image4.jpg'
-import slide5 from '../../assets/carousel/image5.jpg'
-import image6 from '../../assets/carousel/image6.jpg'
+import slide5 from '../../assets/carousel/image16.jpg'
+import slide6 from '../../assets/carousel/image11.jpg'
 import image7 from '../../assets/carousel/image7.jpg'
 
 const s = {
@@ -26,7 +26,7 @@ const s = {
     footer: "flex1 fCenter"
 };  
 
-const slides = [slide1, slide2, slide3, slide4, slide5]
+const slides = [slide1, slide2, slide3, slide6, slide5]
 
 
 export class Homepage extends Component {

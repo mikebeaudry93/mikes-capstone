@@ -10,7 +10,7 @@ export class LastPage extends Component {
     render() {
         return (
             <div className="page content">
-            <h2 className="last-page-title">Who is Your Preffered Instructor?</h2>
+            <h2 className="last-page-title">Who is Your Preferred Instructor?</h2>
              <div className="box">
                 <button className={`button1 button-quiz`} value="Male" name="Male" onClick={(e) => this.props.buttonClick3(e)}>
                 <img className="page__image" src={Male} alt="Male"></img>
@@ -26,7 +26,7 @@ export class LastPage extends Component {
                 {/* <img className="page__image" src={Strength} alt="Don't"></img> */}
                     Doesn't Matter
                 </button>
-                <Link to="/result">
+                <Link className="link" to="/result">
                     <button className={`button-next button-quiz`}>Get Your Workout!</button>
                 </Link>
                 <Link to="/focus-page">

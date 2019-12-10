@@ -24,7 +24,7 @@ export class DurationPage extends Component {
                         <img className="page__image" src={Clock3} alt="45 minutes"></img>
                             45 Minutes
                         </button>
-                        <Link to="/focus-page">
+                        <Link className="link" to="/focus-page">
                             <button className={`button-next button-quiz`}>Next</button>
                         </Link>
                         <Link to="/">

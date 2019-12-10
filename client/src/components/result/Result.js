@@ -22,7 +22,7 @@ export class Result extends Component {
                         <img className="result__back" src={back} alt="back"></img>
                     </Link>
                     <div className="result__title-box">
-                        <h1 className="result__title">Todays Workout</h1>
+                        <h1 className="result__title">Today's Workout</h1>
                         <img className="result__image" src={ResultLogo} alt="focus"></img>
                     </div>
                     <div className="result__answers-box">

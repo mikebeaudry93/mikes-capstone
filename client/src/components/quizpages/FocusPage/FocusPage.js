@@ -25,7 +25,7 @@ export class FocusPage extends Component {
                     <img className="page__image" src={Strength} alt="Strength"></img>
                         Strength
                     </button>
-                    <Link to="/last-page">
+                    <Link className="link" to="/last-page">
                         <button className={`button-next button-quiz`} onClick={(e) => this.props.buttonClick4(e)}>Next</button>
                     </Link>
                     <Link to="/duration-page">
