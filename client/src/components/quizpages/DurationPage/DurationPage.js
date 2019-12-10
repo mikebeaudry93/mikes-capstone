@@ -9,9 +9,9 @@ import Clock3 from '../../../assets/45-minutes.svg'
 export class DurationPage extends Component {
     render() {
         return (
-            <div className="page">
+            <div className="page content">
                 <h2 className="page__title">How Long is Today's Workout?</h2>
-                <div className="box">
+                <div className="box content--inner">
                         <button className={`button1 button-quiz`} value="15" onClick={(e) => this.props.buttonClick1(e)}>
                         <img className="page__image" src={Clock} alt="15 minutes"></img>
                             15 Minutes

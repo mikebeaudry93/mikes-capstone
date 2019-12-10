@@ -35,7 +35,16 @@ export default function Accordian(props) {
             <div  ref={content} style={{ maxHeight: `${setHeight}`}} className="accordian__content">
                 <div className="accordian__text"
                 dangerouslySetInnerHTML = {{ __html: props.itemContent.description }} />
-                <p className="time">{props.itemContent.time} minutes</p>
+                    <div className="minutes-checkbox">
+                        <p className="time">{props.itemContent.time} minutes</p>
+                        <div class="pretty p-icon p-round p-jelly">
+                            <input type="checkbox" />
+                            <div class="state p-primary">
+                                <i class="icon mdi mdi-check"></i>
+                                <label>Done</label>
+                            </div>
+                    </div>
+                </div>
                  <Link to={`/video/${props.itemContent[props.prefferedInstructor]}`}>
                     <p className="accordian__videolink">Video Link</p>
                     {/* <Video itemContent={props.itemContent} prefferedIntructor={props.prefferedIntructor}/> */}

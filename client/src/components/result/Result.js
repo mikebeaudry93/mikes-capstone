@@ -10,12 +10,7 @@ import ResultLogo from "../../assets/logo.svg"
 import Accordian from "../accordian/Accordian"
 
 export class Result extends Component {
-    
-    state = {
 
-        displayData: null
-        
-    }
     
     render() {
 

@@ -10,7 +10,7 @@ import Strength from "../../../assets/workout1.svg"
 export class FocusPage extends Component {
     render() {
         return (
-            <div className="page">
+            <div className="page content">
                 <h2 className="focus-title">What is Todays Focus?</h2>
             <div className="box">
                     <button className={`button1 button-quiz`} value="WeightLoss" onClick={(e) => this.props.buttonClick2(e)}>

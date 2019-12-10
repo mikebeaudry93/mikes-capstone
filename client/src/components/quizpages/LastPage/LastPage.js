@@ -9,7 +9,7 @@ import Female from '../../../assets/female-silhouette.svg'
 export class LastPage extends Component {
     render() {
         return (
-            <div className="page">
+            <div className="page content">
             <h2 className="last-page-title">Who is Your Preffered Instructor?</h2>
              <div className="box">
                 <button className={`button1 button-quiz`} value="Male" name="Male" onClick={(e) => this.props.buttonClick3(e)}>
