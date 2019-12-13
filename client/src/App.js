@@ -1,8 +1,6 @@
 import React, { Component } from 'react';
 import './App.scss';
 import { BrowserRouter, Switch, Route } from "react-router-dom";
-import { Transition, TransitionGroup } from 'react-transition-group';
-import { play, exit } from './timelines/timeslines';
 import axios from "axios";
 
 // images 
