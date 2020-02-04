@@ -9,6 +9,11 @@
         padding-top: 125px;
         margin-left: 35px;
         color: black;
+
+        @include desktop {
+            margin-left: 0px;
+            text-align: center;
+        }
     }
 
     &__image {

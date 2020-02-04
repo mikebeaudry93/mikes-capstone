@@ -1,13 +1,23 @@
+@import "../../styles/styles.scss";
+
 .videopage {
-    height: 100vh
+    height: 100%;
+    // display: flex;
+    // justify-content: column;
+    // align-items: center;
 }
 
 .player-wrapper {
     position: relative;
     padding-top: 56.25% 
+
 }
 
 .video {
+
+    @include desktop {
+        margin-top: 5px;
+    }
     margin-top: 100px;
     position: absolute;
     top: 0;
@@ -17,4 +27,11 @@
 .back-video {
     margin-top: 200px;
     margin-left: 165px;
+    @include desktop {
+        position: relative;
+        margin-top: 0px;
+        margin-left: 670px;
+        bottom: 180px;
+        // margin-bottom: 500px;
+    }
 }

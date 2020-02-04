@@ -26,7 +26,7 @@ const s = {
     footer: "flex1 fCenter"
 };  
 
-const slides = [slide1, slide2, slide3, slide6, slide5]
+const slides = [slide3, slide6, slide5]
 
 
 export class Homepage extends Component {
@@ -54,10 +54,12 @@ export class Homepage extends Component {
                         <div className={s.main}>
                             <div className={s.header}>uFitness</div>
                             <Slideshow slides={slides} />
-                            <Link to="/duration-page">
-                            <button className="button1 button" value="start" name="start" 
-                            >Create Workout</button>
-                        </Link>
+                            <div className="workout-button-container">
+                                <Link to="/duration-page">
+                                    <button className="button1 button" value="start" name="start" 
+                                    >Create Workout</button>
+                                </Link>
+                            </div>
                         </div>
                         {/* <div className={s.footer}>
                         <Link to="/duration-page">

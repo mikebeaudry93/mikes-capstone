@@ -47,10 +47,8 @@ export default function Accordian(props) {
                 </div>
                  <Link className="link" to={`/video/${props.itemContent[props.prefferedInstructor]}`}>
                     <p className="accordian__videolink">Video Link</p>
-                    {/* <Video itemContent={props.itemContent} prefferedIntructor={props.prefferedIntructor}/> */}
                 </Link>
             </div>
-            {/* <video src={`${props.itemContent}.${props.prefferedIntructor}`}></video> */}
         </div>
     )
 }

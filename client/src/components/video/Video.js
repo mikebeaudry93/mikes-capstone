@@ -11,7 +11,7 @@ export class Video extends Component {
         return (
             <div className="page videopage">
                 <div className="player-wrapper">
-                    <ReactPlayer className="video" url={`http://youtube.com/watch${this.props.location.search}`} width="100%" height="300px"/>
+                    <ReactPlayer className="video" url={`http://youtube.com/watch${this.props.location.search}`} width="100%" height="600px"/>
                 </div>
                 <Link to="/result">
                         <button className="go-back back-video">Go Back</button>

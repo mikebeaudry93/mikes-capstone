@@ -151,30 +151,14 @@ export class App extends Component {
     return (
       <div>
         <BrowserRouter>
-        {/* <Route render={(location) =>{
-          const { pathname, key } = location;
-          return (
-            <TransitionGroup component={null}>
-            <Transition
-              key={key}
-              appear={true}
-              onEnter={(node, appears) => play(pathname, node, appears)}
-              onExit={(node, appears) => exit(node, appears)}
-              timeout={{enter: 750, exit: 150}}
-            > */}
-          {/* <Switch location={location}> */}
           <Switch>
-            <Route path="/" exact render={(props) => <Homepage />} />
+            <Route path="/" exact component={Homepage} />
             <Route path="/duration-page" render={(props) => <DurationPage {...props} buttonClick1={this.buttonClick1}/>} />
             <Route path="/focus-page" render={(props) => <FocusPage {...props} buttonClick2={this.buttonClick2} buttonClick4={this.buttonClick4}/>} />
             <Route path="/last-page" render={(props) => <LastPage {...props} buttonClick3={this.buttonClick3}/>} />
             <Route path="/result" render={(props) => <Result {...props} todaysWorkout={this.state.todaysWorkout} prefferedInstructor={this.state.prefferedInstructor} duration={this.state.durationImage} focus={this.state.focusImage} gender={this.state.gender}/>} />
             <Route path="/video/:url" render={(props) => <Video {...props} todaysWorkout={this.state.todaysWorkout} prefferedInstructor={this.state.prefferedInstructor}/>} />
           </Switch>
-         {/* </Transition>
-         </TransitionGroup> */}
-          {/* )
-        }}/> */}
         </BrowserRouter>
       </div>
     )

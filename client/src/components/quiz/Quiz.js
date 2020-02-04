@@ -7,20 +7,10 @@ import Strength from '../../assets/workout.svg'
 
 export class Quiz extends Component {
 
-    state = {
-
-        duration: null,
-        focus: null,
-        prefferedInstructor: null,
-
-    }
-
-    // onClick={(e) => this.props.deleteHandler(e)}
-
     render() {
      
         return (
-            <div className={`button-hidden ${this.props.isClicked ? "button-shown" : ""}`}>
+            <>
                 <div className="container">
                     <h3 className="container__title">How long is today's workout?</h3>
                     <div className="box">
@@ -45,13 +35,12 @@ export class Quiz extends Component {
                     <div className="box">
                         <button className={`button7 button-quiz`} value="Male" onClick={(e) => this.props.buttonClick3(e)}>Male</button>    
                         <button className={`button8 button-quiz`} value="Female" onClick={(e) => this.props.buttonClick3(e)}>Female</button>
-                        {/* <button className={`button9 button-quiz`} value="DoesntMatter" onClick={(e) => this.props.buttonClick3(e)}>Doesn't Matter</button> */}
                     </div>    
                 </div>
                 <Link to="/result">
                     <button className="button button-result">View Workout</button>
                 </Link>
-            </div>
+            </>
         )
     }
 }

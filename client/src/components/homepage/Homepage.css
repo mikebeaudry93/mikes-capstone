@@ -3,6 +3,9 @@
     background-image: url("../../assets/homepage.jpg");
     height: 100vh;
     position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .button-box {
@@ -23,9 +26,12 @@
     font-size: 20px;
     color: black;
     z-index: 1000;
-    position: absolute;
+    /* position: absolute;
     top: 400px;
-    left: 40px;
+    left: 40px; */
+    position: relative;
+    bottom: 200px;
+
 }
 
 .button:hover {
@@ -113,6 +119,10 @@
 }
 .white {
     background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 .white50 {
     background-color: #ffffff80;
@@ -178,7 +188,19 @@
 }
 .flex8 {
     flex: 8;
+    display: flex;
+    /* flex-direction: column; */
+    align-items: center;
+    justify-content: center;
 }
+
+/* .workout-button-container {
+    width: 100%;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+} */
 
 /*====== CUSTOM ======*/
 
